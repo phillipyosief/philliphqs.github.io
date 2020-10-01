@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>hqsartworks</title>
+    <meta name="description" content="hqs.bot is a multi-purpose bot ready to skill up and boost up your Discord server. It also features auto-moderation, administration, music, all basic Discord Bot features and much more! Ready for hqs.bot invite it now on hqsartworks ">
+    <meta name="twitter:image" content="/assets/img/HeaderTwitter.png?h=bb0a8c4241f1a78ba076b8deb17e061e">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="hqsartworks">
+    <meta name="twitter:description" content="hqs.bot is a multi-purpose bot ready to skill up and boost up your Discord server
+Also features auto-moderation, administration, music and much more!">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png?h=c99350dc95af513a62b2a9f90b89bc2d">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png?h=b60163fed024747fe6658aab1a49ff10">
+    <link rel="icon" type="image/png" sizes="180x180" href="/assets/img/apple-icon-180x180.png?h=2716b6bc37268221a05adae63468ff12">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/android-icon-192x192.png?h=f70b7ee4f1c81e0fb59329716abee35d">
+    <link rel="icon" type="image/png" sizes="144x144" href="/assets/img/android-icon-144x144.png?h=f4d5aa95f27e32527ccaabd4707d6033">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arbutus+Slab">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome5-overrides.min.css?h=431006b7798dde30d7728c5df9bb0948">
+    <link rel="stylesheet" href="/assets/css/styles.min.css?h=ad79363fc7631e93dcb9ab2e2ce7d5f9">
+</head>
+
+<body><script type="text/javascript">
+<!--
+if (screen.width <= 699) {
+document.location = "mobile/onlypc.html";
+}
+//-->
+</script><!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+
+  canvas {
+    border-radius: 30px;
+
+    border: 5px solid #ad91ff;
+  }
+  </style>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/now-ui-kit.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg bg-transparent">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="/assets/img/menuIcon.svg?h=3fe211831631f9f6aa4db30840f80793" width="20px" height="20px" style="max-width: none !important;">
+    </button>
+    <img src="/assets/img/Logo.png?h=9fe3cd0806136077c8ad32db7a575a76" width="55" height="55">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px !important">
+        <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/index.html#featuresHREF">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/projects.html">Other projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/donate.html">Donate</a>
+            </li>
+            
+        </ul>
+        <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Documentation
+            </a>
+            
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/commands.html">Commands</a>
+                <a class="dropdown-item" href="/tutorials.html">Tutorials</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://github.com/philliphqs/hqs.bot">GitHub Repo</a>
+            </div>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+            
+        </div>
+        <button class="btn login-btn btn-outline-accent my-2 my-sm-0" style="font-size: 10px !important;font-family: poppins !important;" onclick="window.open('dashboard/login.html');">LOGIN</button>
+    </div>
+</nav>
+
+<div style="
+    display: flex;
+    align-items: center;
+    justify-content: center;">
+<canvas width="800" height="400" id="game" style="float: center;"></canvas>
+<script>
+var canvas = document.getElementById('game');
+var context = canvas.getContext('2d');
+
+var grid = 16;
+var count = 0;
+  
+var snake = {
+  x: 160,
+  y: 160,
+  
+  // snake velocity. moves one grid length every frame in either the x or y direction
+  dx: grid,
+  dy: 0,
+  
+  // keep track of all grids the snake body occupies
+  cells: [],
+  
+  // length of the snake. grows when eating an apple
+  maxCells: 4
+};
+var apple = {
+  x: 320,
+  y: 320
+};
+
+// get random whole numbers in a specific range
+// @see https://stackoverflow.com/a/1527820/2124254
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
+// game loop
+function loop() {
+  requestAnimationFrame(loop);
+
+  // slow game loop to 15 fps instead of 60 (60/15 = 4)
+  if (++count < 4) {
+    return;
+  }
+
+  count = 0;
+  context.clearRect(0,0,canvas.width,canvas.height);
+
+  // move snake by it's velocity
+  snake.x += snake.dx;
+  snake.y += snake.dy;
+
+  // wrap snake position horizontally on edge of screen
+  if (snake.x < 0) {
+    snake.x = canvas.width - grid;
+  }
+  else if (snake.x >= canvas.width) {
+    snake.x = 0;
+  }
+  
+  // wrap snake position vertically on edge of screen
+  if (snake.y < 0) {
+    snake.y = canvas.height - grid;
+  }
+  else if (snake.y >= canvas.height) {
+    snake.y = 0;
+  }
+
+  // keep track of where snake has been. front of the array is always the head
+  snake.cells.unshift({x: snake.x, y: snake.y});
+
+  // remove cells as we move away from them
+  if (snake.cells.length > snake.maxCells) {
+    snake.cells.pop();
+  }
+
+  // draw apple
+  context.fillStyle = 'red';
+  context.fillRect(apple.x, apple.y, grid-1, grid-1);
+
+  // draw snake one cell at a time
+  context.fillStyle = '#ad91ff';
+  snake.cells.forEach(function(cell, index) {
+    
+    // drawing 1 px smaller than the grid creates a grid effect in the snake body so you can see how long it is
+    context.fillRect(cell.x, cell.y, grid-1, grid-1);  
+
+    // snake ate apple
+    if (cell.x === apple.x && cell.y === apple.y) {
+      snake.maxCells++;
+
+      // canvas is 400x400 which is 25x25 grids 
+      apple.x = getRandomInt(0, 25) * grid;
+      apple.y = getRandomInt(0, 25) * grid;
+    }
+
+    // check collision with all cells after this one (modified bubble sort)
+    for (var i = index + 1; i < snake.cells.length; i++) {
+      
+      // snake occupies same space as a body part. reset game
+      if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
+        snake.x = 160;
+        snake.y = 160;
+        snake.cells = [];
+        snake.maxCells = 4;
+        snake.dx = grid;
+        snake.dy = 0;
+
+        apple.x = getRandomInt(0, 25) * grid;
+        apple.y = getRandomInt(0, 25) * grid;
+      }
+    }
+  });
+}
+
+// listen to keyboard events to move the snake
+document.addEventListener('keydown', function(e) {
+  // prevent snake from backtracking on itself by checking that it's 
+  // not already moving on the same axis (pressing left while moving
+  // left won't do anything, and pressing right while moving left
+  // shouldn't let you collide with your own body)
+  
+  // left arrow key
+  if (e.which === 37 && snake.dx === 0) {
+    snake.dx = -grid;
+    snake.dy = 0;
+  }
+  // up arrow key
+  else if (e.which === 38 && snake.dy === 0) {
+    snake.dy = -grid;
+    snake.dx = 0;
+  }
+  // right arrow key
+  else if (e.which === 39 && snake.dx === 0) {
+    snake.dx = grid;
+    snake.dy = 0;
+  }
+  // down arrow key
+  else if (e.which === 40 && snake.dy === 0) {
+    snake.dy = grid;
+    snake.dx = 0;
+  }
+});
+
+// start the game
+requestAnimationFrame(loop);
+</script>
+</div>
+</html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/script.min.js?h=4724d5827b76268c92657ac849a54fd4"></script>
+</body>
+
+</html>
