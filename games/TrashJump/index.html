@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | TrashJump</title>
+    <title>Unity WebGL Player | New Unity Project</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -22,20 +22,20 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">TrashJump</div>
+        <div id="unity-build-title">New Unity Project</div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Game.loader.js";
+      var loaderUrl = buildUrl + "/TrashJump.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Game.data.gz",
-        frameworkUrl: buildUrl + "/Game.framework.js.gz",
-        codeUrl: buildUrl + "/Game.wasm.gz",
+        dataUrl: buildUrl + "/TrashJump.data.gz",
+        frameworkUrl: buildUrl + "/TrashJump.framework.js.gz",
+        codeUrl: buildUrl + "/TrashJump.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "hqsartworks",
-        productName: "TrashJump",
-        productVersion: "0.0.1",
+        companyName: "DefaultCompany",
+        productName: "New Unity Project",
+        productVersion: "2.0.0",
       };
 
       var container = document.querySelector("#unity-container");
@@ -56,7 +56,6 @@
         canvas.style.width = "960px";
         canvas.style.height = "600px";
       }
-      canvas.style.background = "url('" + buildUrl + "/Game.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
