@@ -87,7 +87,7 @@ RewriteCond %{HTTP_USER_AGENT} ^Xaldon\ WebSpider [OR]
 RewriteCond %{HTTP_USER_AGENT} ^Zeus
 RewriteRule ^.* - [F,L]
 
-//Prevent viewing of .htaccess file
+// Prevent viewing of .htaccess file
 <Files .htaccess>
 order allow,deny
 deny from all
