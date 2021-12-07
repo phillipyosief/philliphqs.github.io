@@ -47,8 +47,8 @@
 
 .btn-primary:hover {
   color: rgb(178, 143, 255);
-  background-color: #2e2e2e;
-  border-color: #e4e4e450;
+  background-color: #2e2e2eb2;
+  border-color: #000000;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
